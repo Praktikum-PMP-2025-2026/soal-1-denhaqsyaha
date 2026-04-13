@@ -13,7 +13,7 @@ int main () {
         printf("\nTOLAK");
     } else if (izin == 1) {
         printf("\nMASUK");
-    } else if (izin == 2 && radiasi <= 2 && jam >= 8 && jam <= 20) {
+    } else if (izin == 2 && radiasi <= 2 && jam >= 8 && jam <= 18) {
         printf("\nMASUK");
     } else if (izin == 2) {
         printf("\nPEMERIKSAAN");
