@@ -6,21 +6,21 @@ int main () {
     scanf("%d %d %d %d", &izin, &suhu, &radiasi, &jam);
     
     if (radiasi >= 6) {
-        printf("\nTOLAK");
+        printf("TOLAK");
     } else if (suhu >= 390) {
-        printf("\nKARANTINA");
+        printf("KARANTINA");
     } else if (izin == 1 && (jam < 6 || jam > 20)) {
-        printf("\nTOLAK");
+        printf("TOLAK");
     } else if (izin == 1) {
-        printf("\nMASUK");
+        printf("MASUK");
     } else if (izin == 2 && radiasi <= 2 && jam > 8 && jam < 18) {
-        printf("\nMASUK");
+        printf("MASUK");
     } else if (izin == 2) {
-        printf("\nPEMERIKSAAN");
+        printf("PEMERIKSAAN");
     } else if (izin == 3 && radiasi == 0 && suhu < 380) {
-        printf("\nMASUK");
+        printf("MASUK");
     } else {
-        printf("\nTOLAK");
+        printf("TOLAK");
     }
 
     return 0;
